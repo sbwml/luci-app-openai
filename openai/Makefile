@@ -7,22 +7,22 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=openai
-PKG_VERSION:=20230609
+PKG_VERSION:=2.7-24bf15a
 PKG_RELEASE:=1
 STRIP:=false
 
-PKG_SOURCE_URL:=https://us.cooluc.com/openai/
-PKG_SOURCE:=openai-$(PKG_VERSION)-linux-musl-$(ARCH).tar.gz
+PKG_SOURCE_URL:=https://github.com/sbwml/chatgpt-next/releases/download/v$(PKG_VERSION)/
+PKG_SOURCE:=openai-v$(PKG_VERSION)-linux-musl-$(ARCH).tar.gz
 
 # Binary by next.js server + nodejs16
 ifeq ($(ARCH),aarch64)
-  PKG_HASH:=8f6ee07e5042e554b197ded7af09df1327f5ecc38297260797720c839cb7771e
+  PKG_HASH:=aecd0e7a5a1375ee7bce1a2303cf1ec569f9681ceb99634049d6101d8cc23bb8
 else ifeq ($(ARCH),x86_64)
-  PKG_HASH:=fc2a9c1934ede97999fe412db78beb1215fa6d0d880550d3622343c8c2c26c04
+  PKG_HASH:=e28053aa3b2826af99b496a8b8f92915519518a586568dd71d3fc3d3e916af32
 endif
 
 PKG_MAINTAINER:=sbwml <admin@cooluc.com>
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-v$(PKG_VERSION)-linux-musl-$(ARCH)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
