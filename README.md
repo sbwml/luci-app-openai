@@ -7,6 +7,14 @@
 
 </div>
 
+-----------
+
+它来自 [Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)，使用 [node-pkg](https://github.com/vercel/pkg) 工具封装而成，它适用于官方 [OpenWrt](https://github.com/openwrt)  aarch64 & x86_64 架构的固件使用。
+
+
+
+-----------
+
 
 ## How to build
 
