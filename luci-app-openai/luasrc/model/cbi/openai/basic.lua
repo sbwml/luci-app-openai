@@ -34,6 +34,7 @@ o.default = false
 o = s:option(Value, "base_url", translate("OpenAI API URL"), translate("OpenAI API URL, you can customize a reverse proxy endpoint that is suitable for the current network."))
 o.default = "https://api.openai.com"
 o:value("https://api.openai.com", translate("https://api.openai.com (official)"))
+o:value("https://chatgpt1.nextweb.fun/api/proxy", translate("https://chatgpt1.nextweb.fun/api/proxy (anti-proxy)"))
 
 o = s:option(Value, "openai_api_key", translate("OpenAI API Keys"), translate("Please Enter your OpenAI API Keys.") .. '<br />' .. [[<a href="https://platform.openai.com/account/api-keys" target="_blank">]] .. translate("Get OpenAI API Keys") .. [[</a>]])
 o.datatype = "string"

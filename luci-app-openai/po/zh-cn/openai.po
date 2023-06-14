@@ -37,6 +37,9 @@ msgstr "OpenAI 接口地址"
 msgid "https://api.openai.com (official)"
 msgstr "https://api.openai.com（官方）"
 
+msgid "https://chatgpt1.nextweb.fun/api/proxy (anti-proxy)"
+msgstr "https://chatgpt1.nextweb.fun/api/proxy（反代理）"
+
 msgid "OpenAI API URL, you can customize a reverse proxy endpoint that is suitable for the current network."
 msgstr "OpenAI 接口地址，您可以自定义一个适用于当前网络的 OpenAI API 反代理接口。"
 
