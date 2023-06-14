@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=openai
-PKG_VERSION:=2.7-bdb03e0
+PKG_VERSION:=2.8-3fa8b0a
 PKG_RELEASE:=1
 STRIP:=false
 
@@ -16,9 +16,9 @@ PKG_SOURCE:=openai-v$(PKG_VERSION)-linux-musl-$(ARCH).tar.gz
 
 # Binary by next.js server + nodejs16
 ifeq ($(ARCH),aarch64)
-  PKG_HASH:=4a5ce854fc52e539e5613ec18087795cc6534d05d26906ec51afbfd640ee742a
+  PKG_HASH:=ccec415873279e50764dc0e10a819a7c83864c5f34194722426e6d7808b7685b
 else ifeq ($(ARCH),x86_64)
-  PKG_HASH:=ee8e5bf3cd3d0c4256a50a9fea13ffe76668f251ff3beecddb84f61995df5772
+  PKG_HASH:=d0d373c900814e29e5a50e4b981d559cb3da1c22f0446ef3fc27414f305af7a0
 endif
 
 PKG_MAINTAINER:=sbwml <admin@cooluc.com>
