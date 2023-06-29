@@ -1,20 +1,10 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/docs/images/icon.svg" alt="icon"/>
-
+<img src="https://user-images.githubusercontent.com/16485166/249882416-ece05655-b0ee-44e5-b81c-6d5a03c94120.svg" style="width:100px;" alt="icon"/>
 <h1 align="center">luci-app-openai</h1>
-
-<h3 align="center">ChatGPT - Build your own AI assistant.</h3>
-
+<h3 align="center">ChatGPT - Build your own AI Assistant.</h3>
 </div>
 
 -----------
-
-它来自 [Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)，使用 [node-pkg](https://github.com/vercel/pkg) 工具封装而成，它适用于官方 [OpenWrt](https://github.com/openwrt)  aarch64 & x86_64 架构的固件使用。
-
-
-
------------
-
 
 ## How to build
 

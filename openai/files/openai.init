@@ -3,7 +3,6 @@
 START=99
 USE_PROCD=1
 PROG=/usr/bin/openai
-ROOT=/snapshot/sbwml
 
 get_config() {
 	config_load openai
@@ -39,7 +38,6 @@ set_firewall() {
 start_service() {
 	get_config
 	[ "$enabled" -ne "1" ] && return 1
-	mkdir -p $ROOT
 	if [ "$allow_wan" -eq "1" ]; then
 		set_type="allow"
 	else
